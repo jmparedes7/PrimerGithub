@@ -1,0 +1,189 @@
+/*opciones por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+   }
+
+/*Encabezado*/
+
+.logo{
+	width: 150px;
+   
+}
+
+
+body{
+	background: linear-gradient(to bottom, #40e0d0, #ff8c00, #ff0080);
+	padding: 15px;}	
+
+#header{
+	min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerColor{
+	background-color: grey;
+}
+
+ul li{
+	display: inline-block;
+	padding: 10px;
+
+}
+
+ul{ list-style: none;
+	list-style-position: center;
+}
+
+a{text-decoration: none;
+}
+
+
+.nav{color: #f5f3f4 ;
+font-size: 22px;
+font-weight: bold;}
+
+.nav:hover{
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+
+
+}
+
+.titulo{ text-align: center;
+	font-size: 40px;
+ }
+
+.fuenteTitulo{
+	letter-spacing: auto;
+	font-family: 'Concert One', cursive;
+}
+
+/*CONTENIDO*/
+ h1{
+ 	font-size: 22px;
+ 	font-family: 'Concert one', cursive;
+	font-weight: bold;
+	align-items: center;
+	padding:20px;
+
+ }
+
+.parrafo1{
+	color: #ff0054;
+padding: 20px;}
+
+.parrafo2{
+	color: #000000;
+	font-family: 'Concert One';
+	padding: 20px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.fuenteParrafo{ font-weight: bold;
+	padding: 20px;
+
+}
+
+h2{font-size: 40px;
+	font-family: 'Concert one', cursive;
+	font-weight: bold;}
+
+.precio{
+	font-weight: bold;
+}
+
+
+
+/* IMAGENES */
+
+.producto{
+	display:inline-block;
+	padding: 20px 10px; 
+	float: none;
+
+}
+
+
+.imgIndex{
+    width: 500px;
+    height: 280px;
+}
+
+
+.videos{
+	border-top: 3px solid black;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Concert one', cursive;
+}
+.videosContenedor{
+	border-bottom: 3px solid black;
+	padding: 20px 10px;
+	margin: auto;}
+	
+
+
+
+/*FOOTER*/
+
+.mediosPago{
+	border-top:3px solid black;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Concert one', cursive;
+}
+
+.seguinos{ font-size: 40px;
+	font-family: 'Concert one', cursive;
+	font-weight: bold;
+ }
+
+.imgWpp{width: 50px;
+
+}
+
+.wpp{height: auto;
+	width: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;	
+}
+
+.wpp:hover{
+	width: 80px;
+}
+
+/*grilla seccion: productos*/
+#grillaJuegos{
+	display: grid;
+    grid-template-areas:
+    "auto" "auto" "auto"
+    "auto" "auto" "auto"
+    "auto" "auto" "auto";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: end;
+    align-content: start;
+    height: 100vh;
+}
+
+.imgProductos{
+	width: 350px;
+    height: 280px;
+}
+
+
+
